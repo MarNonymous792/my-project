@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+@import "tailwindcss";
+
+@plugin "flowbite/plugin";
+
+@source "../node_modules/flowbite";
+
+@theme {
+  --color-white-50: oklch(96.5% 0.008 145.51);
+  --color-white-100: oklch(92.87% 0.019 145.42);
+  --color-white-200: oklch(85.55% 0.035 145.26);
+  --color-white-300: oklch(78.25% 0.055 145.03);
+  --color-white-400: oklch(70.74% 0.072 144.77);
+  --color-white-500: oklch(63.31% 0.093 144.38);
+  --color-white-600: oklch(53.85% 0.076 144.43);
+  --color-white-700: oklch(44.14% 0.062 144.44);
+  --color-white-800: oklch(33.66% 0.043 144.55);
+  --color-white-900: oklch(22.48% 0.026 144.64);
+  --color-white-950: oklch(18.58% 0.018 144.82);
+
+  --color-bone-50: oklch(96.49% 0.005 78.3);
+  --color-bone-100: oklch(92.72% 0.01 72.66);
+  --color-bone-200: oklch(85.51% 0.02 77.3);
+  --color-bone-300: oklch(77.96% 0.031 75.61);
+  --color-bone-400: oklch(70.41% 0.04 77.48);
+  --color-bone-500: oklch(62.55% 0.051 76.05);
+  --color-bone-600: oklch(53.37% 0.043 77.18);
+  --color-bone-700: oklch(43.63% 0.035 75.1);
+  --color-bone-800: oklch(33.46% 0.025 76.8);
+  --color-bone-900: oklch(22.15% 0.014 72.09);
+  --color-bone-950: oklch(18.56% 0.01 67.12);
+
+  --color-graphite-50: oklch(96.24% 0.003 48.72);
+  --color-graphite-100: oklch(92.56% 0.005 78.3);
+  --color-graphite-200: oklch(84.78% 0.009 67.71);
+  --color-graphite-300: oklch(77.02% 0.014 71.29);
+  --color-graphite-400: oklch(68.86% 0.019 67.51);
+  --color-graphite-500: oklch(60.69% 0.024 69.58);
+  --color-graphite-600: oklch(51.66% 0.02 67.36);
+  --color-graphite-700: oklch(42.45% 0.016 71.08);
+  --color-graphite-800: oklch(32.46% 0.011 67.42);
+  --color-graphite-900: oklch(21.89% 0.007 78.18);
+  --color-graphite-950: oklch(18.38% 0.005 67.5);
+
+  --color-charcoal-50: oklch(96.36% 0.003 106.45);
+  --color-charcoal-100: oklch(92.76% 0.005 95.1);
+  --color-charcoal-200: oklch(85.13% 0.009 91.5);
+  --color-charcoal-300: oklch(77.59% 0.014 93.02);
+  --color-charcoal-400: oklch(69.8% 0.019 96.2);
+  --color-charcoal-500: oklch(61.64% 0.024 92.63);
+  --color-charcoal-600: oklch(52.66% 0.02 96.32);
+  --color-charcoal-700: oklch(43.1% 0.016 93.18);
+  --color-charcoal-800: oklch(32.89% 0.011 91.66);
+  --color-charcoal-900: oklch(22.17% 0.008 95.41);
+  --color-charcoal-950: oklch(18.55% 0.006 106.97);
+
+  --color-sand-50: oklch(96.83% 0.01 81.8);
+  --color-sand-100: oklch(93.63% 0.022 83.26);
+  --color-sand-200: oklch(87.21% 0.044 83.2);
+  --color-sand-300: oklch(80.78% 0.066 82.97);
+  --color-sand-400: oklch(74.34% 0.087 82.41);
+  --color-sand-500: oklch(67.93% 0.105 81.11);
+  --color-sand-600: oklch(57.76% 0.088 81.23);
+  --color-sand-700: oklch(47.13% 0.07 81.41);
+  --color-sand-800: oklch(35.85% 0.05 81.71);
+  --color-sand-900: oklch(23.59% 0.029 82.29);
+  --color-sand-950: oklch(19.55% 0.021 79.82);
+
+  --font-montserrat: 'Monserrat', sans-serif;
+
+  --font-arimo: "Arimo", sans-serif;
+
+  --font-courier: "Courier Prime", monospace;
+
+}
+
+@utility bg-paper {
+  background-color: oklch(51.66% 0.02 67.36);
+  background-image: url("/src/assets/paper.jpg");
+  background-size: cover;
+}
+
+p.personal-detail{
+  @apply flex flex-row justify-between border-b border-black last:text-right mb-1
+}
+
+
