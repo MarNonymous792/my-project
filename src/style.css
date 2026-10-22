@@ -80,7 +80,7 @@
 
 @utility bg-paper {
   background-color: oklch(51.66% 0.02 67.36);
-  background-image: url("/src/assets/paper.jpg");
+  background-image: url("./src/assets/paper.jpg");
   background-size: cover;
 }
 
