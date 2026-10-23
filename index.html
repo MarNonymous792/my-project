@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CONFIDENTIAL!!!</title>
+    <meta
+      name="description"
+      content="The personal case file of Marc Eugene Dacua: background, education, interests, and competitions."
+    />
+    <title>Case File — Marc Eugene Dacua</title>
     <!-- <link rel="stylesheet" href="./src/style.css" /> -->
     <script
       src="https://kit.fontawesome.com/d972c1f784.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="./src/main.js" type="module"></script>
   </head>
 
@@ -19,6 +22,8 @@
       <button
         class="text-4xl text-white-50 cursor-pointer disabled:opacity-0 disabled:cursor-default"
         id="btn-left"
+        aria-label="Previous file section"
+        title="Previous section"
       >
         <i
           class="fa-solid fa-circle-left z-50 drop-shadow-[0_2px_0_rgba(0,0,0,1)]"
@@ -27,6 +32,8 @@
       <button
         class="text-4xl text-white-50 cursor-pointer disabled:opacity-0 disabled:cursor-default"
         id="btn-right"
+        aria-label="Next file section"
+        title="Next section"
       >
         <i
           class="fa-solid fa-circle-right z-50 drop-shadow-[0_2px_0_rgba(0,0,0,1)] focus:ring-4 focus:ring-graphite-200"
@@ -39,7 +46,7 @@
       id="section1"
     >
       <h1 class="text-7xl text-shadow-2xs text-shadow-black">
-        < THIS IS NOT A WEBSITE >
+        &lt; THIS IS <strong>NOT</strong> A WEBSITE &gt;
       </h1>
       <p class="text-3xl text-shadow-2xs text-shadow-black">
         This is the case file of MARC EUGENE DACUA
@@ -515,7 +522,11 @@
         class="container mx-auto min-h-screen flex flex-row justify-around items-center flex-wrap gap-x-5 py-15 z-49"
       >
         <!-- Robotics Competition Card -->
-        <div class="group h-60 w-95 perspective-[1000px]">
+        <div
+          class="group h-60 w-95 perspective-[1000px]"
+          tabindex="0"
+          aria-label="Flip to read about the CESAFI Robotics Competition"
+        >
           <!-- Inner Card -->
           <div
             class="relative h-full w-full rounded-xl transition-transform duration-700 transform-3d group-hover:rotate-x-180"
@@ -525,9 +536,9 @@
               class="absolute inset-0 h-full w-full overflow-hidden rounded-xl backface-hidden"
             >
               <img
-                src="./src/assets/ygo.jpg"
+                src="./src/assets/robotics.jpg"
                 alt="Card Front"
-                class="h-full w-full object-cover"
+                class="h-full w-full object-cover grayscale-75"
               />
             </div>
 
@@ -537,15 +548,18 @@
             >
               <h3 class="text-xl font-bold">CESAFI Robotics Competition</h3>
               <p class="mt-2 text-center text-sm font-arimo">
-                Here is the text description that appears when you hover over
-                the card.
+                An electrifying showcase of skills and strategies in robotics by high school representatives from various colleges and universities
               </p>
             </div>
           </div>
         </div>
 
         <!-- ICT Congress 2025 C Competition -->
-        <div class="group h-60 w-95 perspective-[1000px]">
+        <div
+          class="group h-60 w-95 perspective-[1000px]"
+          tabindex="0"
+          aria-label="Flip to read about the ICT Congress 2025 C Programming Competition"
+        >
           <!-- Inner Card -->
           <div
             class="relative h-full w-full rounded-xl transition-transform duration-700 transform-3d group-hover:rotate-x-180"
@@ -555,9 +569,9 @@
               class="absolute inset-0 h-full w-full overflow-hidden rounded-xl backface-hidden"
             >
               <img
-                src="./src/assets/ygo.jpg"
+                src="./src/assets/ictC.jpg"
                 alt="Card Front"
-                class="h-full w-full object-cover"
+                class="h-full w-full object-cover grayscale-75"
               />
             </div>
 
@@ -570,15 +584,18 @@
                 C Programming Competition
               </h3>
               <p class="mt-2 font-arimo text-sm text-center">
-                Here is the text description that appears when you hover over
-                the card.
+                Eyes on the prize, fingers on the keys. Meet the brilliant contestants of the recent Pre-ICT Congress!
               </p>
             </div>
           </div>
         </div>
 
         <!-- ICT Congress 2026 Java Programming Competition -->
-        <div class="group h-60 w-95 perspective-[1000px]">
+        <div
+          class="group h-60 w-95 perspective-[1000px]"
+          tabindex="0"
+          aria-label="Flip to read about the ICT Congress 2026 Java Programming Competition"
+        >
           <!-- Inner Card -->
           <div
             class="relative h-full w-full rounded-xl transition-transform duration-700 transform-3d group-hover:rotate-x-180"
@@ -588,9 +605,9 @@
               class="absolute inset-0 h-full w-full overflow-hidden rounded-xl backface-hidden"
             >
               <img
-                src="./src/assets/ygo.jpg"
+                src="./src/assets/ictjava.jpg"
                 alt="Card Front"
-                class="h-full w-full object-cover"
+                class="h-full w-full object-cover grayscale-75"
               />
             </div>
 
@@ -603,15 +620,18 @@
                 Java Programming Competition
               </h3>
               <p class="mt-2 text-center text-sm font-arimo">
-                Here is the text description that appears when you hover over
-                the card.
+                The benchmarks have been set! Huge congratulations to our tech wizards who dominated the Hackathon, UI/UX, and programming challenges.
               </p>
             </div>
           </div>
         </div>
 
         <!-- CCS Days C Programming  -->
-        <div class="group h-60 w-95 perspective-[1000px]">
+        <div
+          class="group h-60 w-95 perspective-[1000px]"
+          tabindex="0"
+          aria-label="Flip to read about the CCS Days C Programming Competition"
+        >
           <!-- Inner Card -->
           <div
             class="relative h-full w-full rounded-xl transition-transform duration-700 transform-3d group-hover:rotate-x-180"
@@ -621,9 +641,9 @@
               class="absolute inset-0 h-full w-full overflow-hidden rounded-xl backface-hidden"
             >
               <img
-                src="/src/assets/ygo.jpg"
+                src="/src/assets/ccsC.jpg"
                 alt="Card Front"
-                class="h-full w-full object-cover"
+                class="h-full w-full object-cover grayscale-75"
               />
             </div>
 
@@ -636,15 +656,18 @@
                 C Programming Competition
               </h3>
               <p class="mt-2 text-center text-sm font-arimo">
-                Here is the text description that appears when you hover over
-                the card.
+                CCS Days 2025: Day 1 Kicks Off with Exciting Competitions in Java, C Programming, and UI/UX Design
               </p>
             </div>
           </div>
         </div>
 
         <!-- CCS Days Java Programming Competition -->
-        <div class="group h-60 w-95 perspective-[1000px]">
+        <div
+          class="group h-60 w-95 perspective-[1000px]"
+          tabindex="0"
+          aria-label="Flip to read about the CCS Days Java Programming Competition"
+        >
           <!-- Inner Card -->
           <div
             class="relative h-full w-full rounded-xl transition-transform duration-700 transform-3d group-hover:rotate-x-180"
@@ -654,9 +677,9 @@
               class="absolute inset-0 h-full w-full overflow-hidden rounded-xl backface-hidden"
             >
               <img
-                src="./src/assets/ygo.jpg"
+                src="./src/assets/ccsjava.jpg"
                 alt="Card Front"
-                class="h-full w-full object-cover"
+                class="h-full w-full object-cover grayscale-75"
               />
             </div>
 
@@ -668,8 +691,7 @@
                 CCS Days <br />Java Programming Competition
               </h3>
               <p class="mt-2 text-center text-sm font-arimo">
-                Here is the text description that appears when you hover over
-                the card.
+                Day 1 of CCS Days has officially launched, bringing together passionate minds to showcase their skills and creativity.
               </p>
             </div>
           </div>
@@ -691,20 +713,21 @@
       const prevBtn = document.getElementById("btn-left");
       const nextBtn = document.getElementById("btn-right");
 
-      prevBtn.disabled = true;
+      function updateNavigation(index) {
+        currentIndex = index;
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === sections.length - 1;
+      }
 
       function navigateToSection(index) {
         const targetElement = document.getElementById(sections[index]);
         if (targetElement) {
           targetElement.scrollIntoView({ behavior: "smooth" });
         }
-
-        // Disable Left button if at the very first section
-        prevBtn.disabled = index === 0;
-
-        // Disable Right button if at the very last section
-        nextBtn.disabled = index === sections.length - 1;
+        updateNavigation(index);
       }
+
+      updateNavigation(currentIndex);
 
       // Right Button click handler
       nextBtn.addEventListener("click", () => {
@@ -721,6 +744,34 @@
           navigateToSection(currentIndex);
         }
       });
+
+      let scrollFrame = 0;
+      const syncNavigation = () => {
+        if (scrollFrame) return;
+        scrollFrame = window.requestAnimationFrame(() => {
+          const isMobileLayout = window.matchMedia("(max-width: 760px)").matches;
+          const activeIndex = sections.reduce((closestIndex, id, index) => {
+            const section = document.getElementById(id);
+            const closest = document.getElementById(sections[closestIndex]);
+            const sectionDistance = Math.abs(
+              isMobileLayout
+                ? section.getBoundingClientRect().top
+                : section.getBoundingClientRect().left,
+            );
+            const closestDistance = Math.abs(
+              isMobileLayout
+                ? closest.getBoundingClientRect().top
+                : closest.getBoundingClientRect().left,
+            );
+            return sectionDistance < closestDistance ? index : closestIndex;
+          }, 0);
+          updateNavigation(activeIndex);
+          scrollFrame = 0;
+        });
+      };
+
+      window.addEventListener("scroll", syncNavigation);
+      document.body.addEventListener("scroll", syncNavigation);
     </script>
   </body>
 </html>
